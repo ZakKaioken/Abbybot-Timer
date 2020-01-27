@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>AbbybotTimer</RootNamespace>
+    <ApplicationIcon />
+    <StartupObject />
+    <AssemblyName>AbbybotTimer</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Program.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Program.cs" />
+  </ItemGroup>
+
+</Project>
