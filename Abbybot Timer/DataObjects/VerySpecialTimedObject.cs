@@ -1,10 +1,15 @@
-﻿using System;
+﻿using AbbybotTimer.DataObjects;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace AbbybotTimer
 {
-    class VerySpecialTimedObject
+    class VerySpecialTimedObject : TimedObject
     {
+        public override void DoWork()
+        {
+            base.DoWork();
+        }
     }
 }

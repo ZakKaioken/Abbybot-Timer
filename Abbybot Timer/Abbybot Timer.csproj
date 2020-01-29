@@ -10,7 +10,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DataObjects\VerySpecialTimedObject.cs" />
     <Compile Remove="Program.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="DataObjects\VerySpecialTimedObject.cs" />
   </ItemGroup>
 
   <ItemGroup>

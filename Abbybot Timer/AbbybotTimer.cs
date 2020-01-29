@@ -14,15 +14,16 @@ namespace AbbybotTimer
         public ABTimer()
         {
             timer.Interval = 500;
-            timer.Elapsed += (e, r) => Check();
+            timer.Elapsed += (e, r) => Check().GetAwaiter().GetResult();
             timer.Start();
         }
 
-        public void Check()
+        public async Task Check()
         {
             foreach (var to in tos)
             {
-                to.Check(); 
+                await to.Check();
+                //await to.UpdateTimerString();
             }
         }
    

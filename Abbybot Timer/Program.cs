@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Abbybot_Timer
+namespace AbbybotTimer
 {
     class Program
     {
